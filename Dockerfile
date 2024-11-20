@@ -1,5 +1,5 @@
 FROM openjdk
-WORKDIR /app
-COPY ./app
+WORKDIR /usr/src/app
+COPY app.java .
 RUN hello.java
 CMD ["java","hello"]
